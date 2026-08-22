@@ -1,5 +1,7 @@
 # Exp_2_Simple-Spring-Boot-MVC-Application
 
+`RanjithGanesh B || 212223060222`
+
 ## AIM:
 To develop a Simple Spring Boot MVC (Model-View-Controller) Application that uses a Controller to handle HTTP requests, a Model to pass data, and a View (Thymeleaf) to render dynamic HTML pages.
 
@@ -96,7 +98,7 @@ spring-mvc-demo/
 </project>
 
 ### MvcApplication.java (Main Class):
-
+```
 package com.example.mvc;
 
 import org.springframework.boot.SpringApplication;
@@ -108,9 +110,9 @@ public class MvcApplication {
         SpringApplication.run(MvcApplication.class, args);
     }
 }
-
+```
 ### HomeController.java (Controller):
-
+```
 package com.example.mvc;
 
 import org.springframework.stereotype.Controller;
@@ -126,8 +128,9 @@ public class HomeController {
         return "index";  // refers to index.html in templates folder
     }
 }
+```
 ### index.html (View – inside src/main/resources/templates/):
-
+```
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -135,10 +138,12 @@ public class HomeController {
 </head>
 <body>
     <h1 th:text="${message}">Default Message</h1>
+    <h2>Hi Ranjith Ganesh B</h2>
 </body>
 </html>
-
+```
 ### application.properties:
  server.port=8081
 
-
+## Output 
+<img width="1341" height="1016" alt="image" src="https://github.com/user-attachments/assets/e5ce3a05-d507-4706-b792-bc7f4b20817c" />
